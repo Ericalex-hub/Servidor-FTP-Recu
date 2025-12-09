@@ -15,3 +15,5 @@ sudo named-checkzone tunombre.test /var/lib/bind/tunombre.test.dns
 sudo named-checkzone X.168.192.in-addr.arpa /var/lib/bind/tunombre.test.rev
 sudo systemctl restart named
 sudo systemctl status named
+@192.168.56.10
+#HASTA AQUI LLEGA LA CONFIGURACIÓN DEL SERVIDOR DNS
