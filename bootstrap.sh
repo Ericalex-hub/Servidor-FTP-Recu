@@ -40,3 +40,6 @@ sudo chown maria:maria /home/maria/maria*.txt
 sudo nano /etc/vsftpd.conf
 echo "---You have accessed the public directory server of 'example.com'--" | sudo tee /etc/vsftpd.banner_anon
 echo "maria" | sudo tee /etc/vsftpd.chroot_list
+sudo chmod 600 /etc/ssl/certs/example.com.pem
+sudo chown root:root /etc/ssl/certs/example.com.pem
+sudo nano /etc/vsftpd.conf
