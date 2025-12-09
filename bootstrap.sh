@@ -5,3 +5,7 @@ sudo nano /etc/bind/named.conf
 sudo cp /etc/bind/named.conf.options /etc/bind/named.conf.options.backup
 sudo nano /etc/bind/named.conf.options
 sudo named-checkconf /etc/bind/named.conf.options
+sudo systemctl restart named
+sudo systemctl status named
+sudo nano /etc/bind/named.conf.local
+sudo nano /var/lib/bind/tunombre.test.dns
