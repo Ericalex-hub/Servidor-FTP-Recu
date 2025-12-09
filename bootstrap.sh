@@ -11,3 +11,7 @@ sudo nano /etc/bind/named.conf.local
 sudo nano /var/lib/bind/tunombre.test.dns
 sudo nano /etc/bind/named.conf.local
 sudo nano /var/lib/bind/tunombre.test.rev
+sudo named-checkzone tunombre.test /var/lib/bind/tunombre.test.dns
+sudo named-checkzone X.168.192.in-addr.arpa /var/lib/bind/tunombre.test.rev
+sudo systemctl restart named
+sudo systemctl status named
