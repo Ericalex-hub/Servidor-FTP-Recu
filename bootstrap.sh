@@ -17,3 +17,8 @@ sudo systemctl restart named
 sudo systemctl status named
 @192.168.56.10
 #HASTA AQUI LLEGA LA CONFIGURACIÓN DEL SERVIDOR DNS
+sudo apt update
+sudo nano /etc/resolv.conf
+sudo apt install vsftpd -y
+grep '^ftp:' /etc/passwd
+grep '^ftp:' /etc/group
