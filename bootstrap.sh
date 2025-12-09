@@ -37,3 +37,6 @@ sudo touch /home/luis/luis{1,2}.txt
 sudo chown luis:luis /home/luis/luis*.txt
 sudo touch /home/maria/maria{1,2}.txt
 sudo chown maria:maria /home/maria/maria*.txt
+sudo nano /etc/vsftpd.conf
+echo "---You have accessed the public directory server of 'example.com'--" | sudo tee /etc/vsftpd.banner_anon
+echo "maria" | sudo tee /etc/vsftpd.chroot_list
