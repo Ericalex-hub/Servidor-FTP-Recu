@@ -22,3 +22,6 @@ sudo nano /etc/resolv.conf
 sudo apt install vsftpd -y
 grep '^ftp:' /etc/passwd
 grep '^ftp:' /etc/group
+sudo systemctl status vsftpd
+sudo ss -tlpn | grep 21
+ls -ld /srv/ftp
