@@ -9,3 +9,5 @@ sudo systemctl restart named
 sudo systemctl status named
 sudo nano /etc/bind/named.conf.local
 sudo nano /var/lib/bind/tunombre.test.dns
+sudo nano /etc/bind/named.conf.local
+sudo nano /var/lib/bind/tunombre.test.rev
