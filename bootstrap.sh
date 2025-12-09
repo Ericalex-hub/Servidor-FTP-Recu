@@ -28,3 +28,12 @@ ls -ld /srv/ftp
 grep ftp /etc/ftpusers 2>/dev/null || echo "No existe /etc/ftpusers"
 grep ftp /etc/vsftpd.ftpusers 2>/dev/null || echo "No existe /etc/vsftpd.ftpusers"
 sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.backup
+sudo useradd -m luis
+sudo useradd -m maria
+sudo passwd luis
+sudo passwd maria
+sudo passwd miguel
+sudo touch /home/luis/luis{1,2}.txt
+sudo chown luis:luis /home/luis/luis*.txt
+sudo touch /home/maria/maria{1,2}.txt
+sudo chown maria:maria /home/maria/maria*.txt
