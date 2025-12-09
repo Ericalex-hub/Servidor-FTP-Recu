@@ -25,3 +25,6 @@ grep '^ftp:' /etc/group
 sudo systemctl status vsftpd
 sudo ss -tlpn | grep 21
 ls -ld /srv/ftp
+grep ftp /etc/ftpusers 2>/dev/null || echo "No existe /etc/ftpusers"
+grep ftp /etc/vsftpd.ftpusers 2>/dev/null || echo "No existe /etc/vsftpd.ftpusers"
+sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.backup
