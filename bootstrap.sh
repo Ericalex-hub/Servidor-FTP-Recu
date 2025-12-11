@@ -37,3 +37,5 @@ sudo chmod 600 /etc/ssl/private/tunombre.test.key
 sudo chmod 644 /etc/ssl/certs/tunombre.test.pem
 sudo chown root:root /etc/ssl/private/tunombre.test.key /etc/ssl/certs/tunombre.test.pem
 sudo nano /etc/vsftpd.conf
+sudo systemctl restart vsftpd
+sudo systemctl status vsftpd
