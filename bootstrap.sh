@@ -24,3 +24,4 @@ sudo chown luis:luis /home/luis/luis2.txt
 sudo touch /home/maria/maria1.txt /home/maria/maria2.txt
 sudo chown maria:maria /home/maria/maria1.txt
 sudo chown maria:maria /home/maria/maria2.txt
+sudo nano /etc/vsftpd.conf
