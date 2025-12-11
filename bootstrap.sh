@@ -33,3 +33,6 @@ sudo systemctl status vsftpd
 sudo mkdir -p /etc/ssl/private
 sudo mkdir -p /etc/ssl/certs
 sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/eric.test.key -out /etc/ssl/certs/eric.test.pem -subj "/C=ES/ST=Madrid/L=Madrid/O=eric/CN=ftp.eric.test"
+sudo chmod 600 /etc/ssl/private/tunombre.test.key
+sudo chmod 644 /etc/ssl/certs/tunombre.test.pem
+sudo chown root:root /etc/ssl/private/tunombre.test.key /etc/ssl/certs/tunombre.test.pem
