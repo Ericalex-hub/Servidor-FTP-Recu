@@ -21,3 +21,6 @@ sudo passwd miguel
 sudo touch /home/luis/luis1.txt /home/luis/luis2.txt
 sudo chown luis:luis /home/luis/luis1.txt
 sudo chown luis:luis /home/luis/luis2.txt
+sudo touch /home/maria/maria1.txt /home/maria/maria2.txt
+sudo chown maria:maria /home/maria/maria1.txt
+sudo chown maria:maria /home/maria/maria2.txt
