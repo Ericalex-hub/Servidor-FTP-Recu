@@ -10,3 +10,4 @@ ls -ld /srv/ftp
 cat /etc/ftpusers
 cat /etc/vsftpd.user_list
 sudo systemctl status vsftpd
+sudo ss -tlpn | grep :21
