@@ -26,3 +26,4 @@ sudo chown maria:maria /home/maria/maria1.txt
 sudo chown maria:maria /home/maria/maria2.txt
 sudo nano /etc/vsftpd.conf
 sudo nano /etc/vsftpd.chroot_list
+sudo nano /srv/ftp/.message
