@@ -6,3 +6,4 @@ sudo apt update
 sudo apt install vsftpd -y
 sudo grep ftp /etc/passwd
 sudo grep ftp /etc/group
+ls -ld /srv/ftp
