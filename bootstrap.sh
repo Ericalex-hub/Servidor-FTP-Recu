@@ -12,3 +12,12 @@ cat /etc/vsftpd.user_list
 sudo systemctl status vsftpd
 sudo ss -tlpn | grep :21
 sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.backup
+sudo useradd -m -s /bin/bash luis
+sudo useradd -m -s /bin/bash maria
+sudo useradd -m -s /bin/bash miguel
+sudo passwd luis
+sudo passwd maria
+sudo passwd miguel
+sudo touch /home/luis/luis1.txt /home/luis/luis2.txt
+sudo chown luis:luis /home/luis/luis1.txt
+sudo chown luis:luis /home/luis/luis2.txt
